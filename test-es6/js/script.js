@@ -68,5 +68,44 @@ const sommaXNumeri = (...num) => {
 }
 var risultato = sommaXNumeri(1, 3, 6, 77,)
 console.log(risultato);
-/*  <==== rimuovi qui
-rimuovi qui ====> */
+
+// unione array tramite spread
+
+const array1 = [1, 2, 3];
+const array2 = [5, 12, 0];
+
+// prende gli elemti dell'array1 e array2 e li combina in un unico array
+const mergedArray = [...array1, ...array2];
+
+// se lo scrivo in questo modo verrà creato un array bidimensionale ovvero un array lungo due con
+// all'interno altri 2 array lunghi 3
+/*const mergedArray = [array1, array2];*/
+console.log(mergedArray);
+
+//4.  OBJECT
+
+
+var nome = 'leonardo';
+var cognome = 'ranaldo';
+var eta = 21;
+var chiaveSesso = 'sesso'
+// in automatico assegna il nome della variabile alla chiave ed il contenuto della var
+// al valore della chiava
+// posso anche aggiungere una chiave tramite una variabile con le parentesi []
+var alunno =
+{
+  nome,
+  cognome,
+  eta,
+  [chiaveSesso] : 'm'
+}
+
+// scritto nel 'vecchio' modo
+var alunno2 =
+{
+  nome : nome,
+  cognome : cognome,
+  eta : eta,
+}
+console.log(alunno);
+console.log(alunno2);
